@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="rabbit.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+      <button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+
+<div class="animate">
+    <pre class="species">                              Ten (10) of the Best Pet Rabbit Breeds                                                                                                                        
+    </pre> <br>
+    <pre> <i>                                                                                   (Click the name of animals to know more)</i></pre> 
+
+    <img class="mini" src="minirex.jpeg">
+    <div class="container">
+        <button type="Polar" class="btn" onclick="openPopup()"><i>Mini Rex</i></button>
+
+        <div class="popup" id="popup">
+            <img src="quotation.png">
+            <h2 align="center"><b>About the Breed</b> </h2>
+            <pre>       Mini Rexes originated in France in the late 1800s. A recessive gene makes the Rex's hair stick out from their 
+bodies instead of lying flat, and their outer layer of fur is shorter than that of most breeds. This means that you can feel 
+their exceptionally soft, velvety undercoat.
+                
+                As the name implies, they are fairly small in size (they weigh between 3.5 and 4.5 lbs fully grown) and are 
+incredibly friendly. There is little reason to question why they are one of the most popular rabbit breeds in America.
+                        </pre> 
+
+        <h2 align="center"><b>Personality</b></h2>
+        <pre> Usually very calm and quiet but may squirm if held too tightly. </pre>
+           
+        <h2 align="center"><b>Ease of Care</b></h2>
+        <pre> Needs less grooming than most breeds due to their shorter fur. </pre>
+           
+
+        <button type="button" onclick="closePopup()"> Back </button>
+    </div>
+  </div>
+
+  <script>
+      let popup = document.getElementById("popup");
+      function openPopup(){
+          popup.classList.add("open-popup");
+      }
+      function closePopup(){
+          popup.classList.remove("open-popup");
+      }
+  </script>
+
+
+<img class="holland" src="holland.jpg">
+<div class="container2">
+    <button type="Panda" class="btn2" onclick="openPopup2()"><i>Holland Lop</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>       Holland Lops are popular show rabbits. The breed originated in the Netherlands and was officially recognized by 
+the American Rabbit Breeders Association in 1979. They are a dwarf breed, meaning they are on the small side for rabbits. 
+The standard Holland Lop weighs between 2 and 4 lbs and can have either broken or solid coloring in a wide 
+variety of colors.
+
+            Holland Lops are excitable by nature, so they are fun to play with but can also be a little difficult to get 
+in and out of their cages. They probably aren't the best breed for families with children. While they can get along 
+well with children, they will struggle if they don't feel like being held, so be sure to supervise any playtime 
+with the rabbit.</pre>
+    
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Very energetic, active, and friendly but will resist being picked up and held. </pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Sheds heavily in the summer months, so needs more brushing during that time. Should be let out to roam fairly often. </pre>
+
+        <button type="button" onclick="closePopup2()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="dutch" src="dutch.jpg">
+<div class="container3">
+    <button type="Sun" class="btn3" onclick="openPopup3()"><i>Dutch</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>      Dutch rabbits (a bit of a misnomer, since they were originally bred in England) are well-known for their 
+unique color pattern. They are a bit larger than dwarf breeds, but still on the smaller side overall, averaging 3.5 to 5.5 lbs. 
+They are a calm and easygoing breed, making them exceptional pets—especially for those with children. They can put up with the 
+chaos of being frequently pet and held.</pre>
+    
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Calm and gentle but will easily get depressed if left cooped up too long. Very sociable. </pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Sheds heavily in summer months. Needs to be able to run often.</pre>
+
+     <button type="button" onclick="closePopup3()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup3(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup3(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="dwarf" src="dwarf.jpg">
+<div class="container4">
+    <button type="Bear" class="btn4" onclick="openPopup4()"><i>Dwarf Hotot</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>    Much like Dutch rabbits, Dwarf Hotots are known mostly for their unique coloring. They have entirely white coats, 
+except for one small circle of color around their eyes. For years, the only Hotots that were allowed in shows were those 
+with black spots, but recently, those with chocolate spots have also been given the OK to compete by the ARBA.
+           
+            They were not originally a dwarf breed. The larger Blanc de Hotot was bred in the early 1900s to be a 
+black-eyed, white-haired rabbit that could be used for fur and meat. As both rabbit meat and fur went out of style,
+and more people began keeping these critters as pets, dwarf breeds became increasingly popular, and the Dwarf Hotot 
+breed was created.
+        </pre>
+    
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Does fine in smaller cages than most breeds due to their small size. Food volume needs to be 
+monitored so that they don't overeat.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Sheds heavily in summer months. Needs to be able to run often.</pre>
+
+     <button type="button" onclick="closePopup4()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup4(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup4(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="minil" src="minilop.jpg">
+<div class="container5">
+    <button type="Grizlly" class="btn5" onclick="openPopup5()"><i>Mini Lop</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>    Perhaps one of the most popular breeds in the world, Mini Lops are frequently sold or bred as pets 
+and show rabbits. Similar to Holland Lops, they are small with floppy ears. They are extremely cheerful and playful, 
+and are easily trained. Mini Lops are great for anyone looking to have a litter-trained bunny. They are very sociable
+with other rabbits and animals, but they do prefer calm children. This breed needs intellectual stimulation, so be sure
+to put plenty of toys in their cage. </pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Greatly enjoy cuddling and human interaction, including being pet and held.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Needs to be able to run out of their enclosures. More likely to chew random objects
+ than other breeds.</pre>
+
+     <button type="button" onclick="closePopup5()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup5(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup5(){
+        popup5.classList.remove("open-popup5");
+    }
+</script>
+
+<img class="minis" src="minis.jpg">
+<div class="container6">
+    <button type="Ailuropodinae" class="btn6" onclick="openPopup6()"><i>Mini Satin </i></button>
+
+    <div class="popup6" id="popup6">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>    One of the smaller breeds of pet rabbits, Mini Satins also have extremely soft and lustrous fur. 
+Larger satin breeds became very popular when the satin gene was first recognized in 1956. From there, breeders went 
+on to try to make a smaller version of these rabbits. Mini Satins are usually calm and friendly. However, they can 
+occasionally be temperamental, so be sure to ask the breeder about your particular rabbit before committing to a 
+Mini Satin if you have a hectic house.</pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Calm and gentle but can be skittish around unknown humans.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Doesn't need as much space as most breeds, making it ideal for apartments or small homes. 
+Not as active as many breeds.</pre>
+    
+     <button type="button" onclick="closePopup6()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup6 = document.getElementById("popup6");
+    function openPopup6(){
+        popup6.classList.add("open-popup6");
+    }
+    function closePopup6(){
+        popup6.classList.remove("open-popup6");
+    }
+</script>
+
+<img class="netherland" src="netherland.jpg">
+<div class="container7">
+    <button type="Spectacled" class="btn7" onclick="openPopup7()"><i>Netherland Dwarf </i></button>
+
+    <div class="popup7" id="popup7">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>   Unlike many of the breeds on this list, Netherland Dwarf rabbits are not the best pet breed homes 
+with children. They are, however, great pets for adults and make good companions for adults with disabilities.
+
+            They enjoy human interaction but only in an environment where they feel safe and stable. Extremely 
+small (usually between 1.1 and 2.5 lbs), these rabbits are better suited to a stable and quiet environment better 
+than one with children running around. Despite their small size, these rabbits need a lot of exercise and do better 
+in homes where they're free to run a good chunk of the day. They are skittish and aloof, which, again, is why they 
+are not well-suited as children's pets.
+        </pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Shy and skittish but generally friendly.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre>Needs open space and regular exercise.</pre>
+
+     <button type="button" onclick="closePopup7()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup7 = document.getElementById("popup7");
+    function openPopup7(){
+        popup7.classList.add("open-popup7");
+    }
+    function closePopup7(){
+        popup7.classList.remove("open-popup7");
+    }
+</script>
+
+<img class="polish" src="polish.jpg">
+<div class="container8">
+    <button type="American" class="btn8" onclick="openPopup8()"><i> Polish Rabbit</i></button>
+
+    <div class="popup8" id="popup8">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>  Polish rabbits are a small breed of rabbit whose size does indeed mean they need less space. 
+They tend to be less active than other breeds, meaning they're ideal for those who want a rabbit but can't 
+designate a lot of space for a pen. They are calm and friendly, and bucks tend to be especially laid back. 
+They can also be trained to use a litter box—always a nice trait for an indoor pet rabbit.
+        </pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Cuddly, calm, and affectionate.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre>Is fine with a smaller enclosure due to its small size. Should stay indoors.</pre>
+
+     <button type="button" onclick="closePopup8()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup8 = document.getElementById("popup8");
+    function openPopup8(){
+        popup8.classList.add("open-popup8");
+    }
+    function closePopup8(){
+        popup8.classList.remove("open-popup8");
+    }
+</script>
+
+<img class="lionhead" src="lionhead.jpg">
+<div class="container9">
+    <button type="American" class="btn9" onclick="openPopup9()"><i> Lionhead</i></button>
+
+    <div class="popup9" id="popup9">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre> This breed got its start in Belgium, with breeders mixing a Swiss Fox with a Netherland Dwarf.
+A genetic mutation resulted in the Lionhead, a rabbit with longer fur around its head and rear, which later 
+became known as the "mane" gene. Eventually the breed made its way into the United States in the '90s, and 
+was officially accepted into the American Rabbit Breeders Association in 2014. An energetic and affectionate 
+breed, Lionheads are great pets, especially for families with children. However, they do need more grooming 
+and care than some other breeds. </pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre>  Energetic, affectionate, and loves to play. Love to be picked up and handled.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> Needs a lot of grooming and fur care because the fur can easily get matted or tangled.</pre>
+
+     <button type="button" onclick="closePopup9()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup9 = document.getElementById("popup9");
+    function openPopup9(){
+        popup9.classList.add("open-popup9");
+    }
+    function closePopup9(){
+        popup9.classList.remove("open-popup9");
+    }
+</script>
+
+<img class="jersey" src="jerysey.jpg">
+<div class="container10">
+    <button type="American" class="btn10" onclick="openPopup10()"><i> Jersey Wooly </i></button>
+
+    <div class="popup10" id="popup10">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre> A cross between the French Angora and the Netherland Dwarf resulted in the Jersey Wooly—a small 
+rabbit with a very wooly coat—hence the name. First brought to the ARBA in 1984, this breed is now one of the 
+most widely exhibited rabbits at shows in the United States. Extremely small and loving, they make great pets,
+even if they do require a little extra grooming.
+
+
+        </pre>
+
+            <h2 align="center"><b>Personality</b></h2>
+            <pre> Gentle and docile. Very rarely kick or bite.</pre>
+               
+            <h2 align="center"><b>Ease of Care</b></h2>
+            <pre> </pre>
+
+     <button type="button" onclick="closePopup10()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup10 = document.getElementById("popup10");
+    function openPopup10(){
+        popup10.classList.add("open-popup10");
+    }
+    function closePopup10(){
+        popup10.classList.remove("open-popup10");
+    }
+</script>
+
+
+</div>
+<br> <br><br>
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot5">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+            <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+               <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>

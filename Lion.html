@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="lion.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+      <button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+<div class="animate">
+
+    <pre class="species">                               Six (6) Types of Lions Around the World                                                                                                                          
+    </pre> <br>
+    <pre> <i>                                                                                   (Click the name of animals to know more)</i></pre> 
+
+    <img class="asiatic" src="asiatic.jpg">
+<div class="container">
+    <button type="asiatic" class="btn" onclick="openPopup()"><i>Asiatic Lion</i></button>
+
+    <div class="popup" id="popup">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre><i>This lion is the rarest in the world today.</i> </pre>
+        <pre>        Asiatic Lion (the rarest lion in the world now makes their home at Chester Zoo)Abyssinian Lion. 
+This animal is a meat eater that lives to the age of at least 16 or more years. This majestic animal reaches 300 
+to 500 pounds, and its size is comparable to a six-foot man. The male lions develop stately manes around their head.
+The Asiatic makes its home in the sub-Saharan African domain, while a few others of the same species are found in India’s 
+Gir Forest. Those found in the Gir Forest are heavily protected due to being at a high risk of extinction. There are only a
+few of these types of lions left in the wild.  </pre> 
+
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre> Panthera Leo Persica </pre>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup = document.getElementById("popup");
+    function openPopu2(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+<img class="african" src="african .jpg">
+<div class="container2">
+    <button type="Asiatic" class="btn2" onclick="openPopup2()"><i>African Lion</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre><i>These lions have a lot going against them to live healthy and joyous lives in their wild habitat.</i> </pre>
+        <pre>      The African Lion is the second largest lion in the world. The male lion has an impressive, long, busy mane 
+of hair covering the head and neck. This bushy hair serves as protection to the head and neck when the males are fighting. 
+The general colors of this lion are a mixture of brown hues, combined with golden and blonde hair. 
+            
+            The African Lion and Lioness subsist on meat as their primary source of diet. This lion relies on meat from 
+zebras, warthogs, antelopes, and other large prey. This lion enjoys hunting primarily at night but, on occasion hunts 
+during the daylight hours. These animals have great night vision. Both the male and female lion’s lifespan is 8 years 
+to 15 years. The female generally lives longer than the male.</pre> 
+
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre> Panthera leo </pre> 
+
+    <h2 align="center"><b>Length, Width and Height</b></h2>
+    <pre> MALE: Length 4.5-10.8-feet, Tallness 3.9-feet, 265-420-pounds and slightly heavier than a female
+        FEMALE: Length 2.2-3.3-feet, Tallness 3.6-feet and Weight 265-420-pounds</pre>
+       
+     <button type="button" onclick="closePopup2()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="katanga" src="katanga .jpg">
+<div class="container3">
+    <button type="Congo" class="btn3" onclick="openPopup3()"><i>Katanga Lion</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre><i>These lions are one of the largest lion species known.</i> </pre>
+            <pre>      One of the largest lion species is the Katanga lion or Southwest African Lion. 
+This lion makes its home in several different areas such as, Western Zimbabwe, Zambia, Zaire, Northern Botswana, 
+Angola and Namibia.
+
+These types of lions are designated as truly the Kings of the Jungle. This lion makes its home in family units or prides and 
+works hard to protect its family’s pride. They have a distinctive mane of hair around the head and neck. It is the female 
+lioness of the family that does the hunting. When the cubs reach a year of age, they are taught to hunt. Meat sustains these
+lions, lionesses, and their cubs from kills made on warthogs, zebras, and antelopes. </pre> 
+
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Panthera leo bleyenberghi </pre>
+           
+     <button type="button" onclick="closePopup3()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup3(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup3(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="white" src="White-Lion.jpg">
+<div class="container4">
+    <button type="white" class="btn4" onclick="openPopup4()"><i>White Lion</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+            <pre><i>Anyone with a heart for wildlife, especially the lion community would feel heartbreaking for the White Lion
+ and what they must endure. </i> </pre>
+            <pre>        The species of Panthera Leo has a rare genetic offspring called the White Lion. Scientists found a 
+recessive gene in this species. The White Lion makes its home in only one place on earth, the Timbavati and Kruger areas.
+
+                However, in current times, White Lions are mostly found and held captive in zoos and circuses worldwide. 
+There are too many zoos and circuses that do not take the best care of these lions, thus many suffer at the hands of their 
+keepers. As far as White lions being at high risk for extinction, some scientists attest to this fact while other scientists 
+claim this totally fictional. Most agree that there is a lot of misinformation in the public realm regarding the White lion. 
+
+Zoologists for a garden zoo in Italy find that the White Lion females do not do well breeding in captivity. Cubs are either 
+stillborn or have a low survival rate beyond the first month. Many of these cubs are born with deformities and abnormalities
+of physical or neurological orientation. </pre> 
+
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Panthera leo melanochaita </pre>
+           
+     <button type="button" onclick="closePopup4()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup4(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup4(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="masai" src="masai .jpg">
+<div class="container5">
+    <button type="masai" class="btn5" onclick="openPopup5()"><i>Masai Lion</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre><i>These types of lions have the ability to adapt to their environment at high or low altitudes.</i> </pre>
+        <pre>       These types of lions have been described as having longer legs and their bodies are less stocky or plump. 
+Their backs do not appear as curved as other lion species. The males have tufts of fur on their knees. While the males 
+have manes, they are not as full and look like they are backward combed. 
+
+The manes appear more incredible as the lion ages.  It all depends on the altitude of the habitat of this lion because 
+the higher the habitat is, the fuller the mane becomes. The lower the habitat, such as in northern Kenya, where the 
+climate is more humid and warmer, the mane is not as full. Sometimes the manes are entirely absent.
+
+Areas called home to the Masai include northern Uganda, Kavirondo, southern Kenya, Lake Manyara, Mount Kilimanjaro, 
+and Tanga. </pre> 
+
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre> Ursus Maritimus </pre>
+    
+    <h2 align="center"><b>Length, Width and Height</b></h2>
+    <pre> MALE: Length: 8.2-9.8 feet long from tail tip to head, Height: 3-3.6-feet, 265-420-pounds and Weight: 320-452 pounds
+        FEMALE: 7.5-8.5 feet long from tail tip to head, Height: 3-3.6 feet and Weight: 220-264 pounds</pre>
+
+     <button type="button" onclick="closePopup5()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup5(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup5(){
+        popup5.classList.remove("open-popup5");
+    }
+</script>
+
+<img class="abyssian" src="aby .jpg">
+<div class="container6">
+    <button type="abyssian" class="btn6" onclick="openPopup6()"><i>Abyssian Lion </i></button>
+
+    <div class="popup6" id="popup6">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre><i>This lion type is a mystery to science and science is working hard to find the answers to their DNA.</i> </pre>
+        <pre>        hese species are smaller, stocker, and have longer manes that continue under the torso and along the belly. 
+DNA samples of this breed were taken, and it was discovered that no other lion species have the same DNA. This was a 
+published article in the European Journal of Wildlife Research.  
+
+            These lions are found as a descendant of the original five male and two female lions in 1948 at a private zoo. 
+The zoo owner Emperor Haile Selassie claimed that the lions originally came from southwestern Ethiopia. Scientists are in 
+search of similar species populations in the wild. These lions also carry unique and rare DNA.  Research teams believe these
+types of lions need further conservation efforts after the team ran 15 DNA tests on 20 of the zoo’s lions.</pre> 
+
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre> Panthera leo melanochaita </pre>
+       
+     <button type="button" onclick="closePopup6()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup6 = document.getElementById("popup6");
+    function openPopup6(){
+        popup6.classList.add("open-popup6");
+    }
+    function closePopup6(){
+        popup6.classList.remove("open-popup6");
+    }
+</script>
+
+
+</div>
+<br> <br>
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot6">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+          <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+             <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>

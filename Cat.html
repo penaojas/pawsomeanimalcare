@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="cat.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+      <button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+<div class="animate">
+    <img class="siamese" src="siamese.jpg">
+    <div class="container">
+        <button type="Siamese" class="btn" onclick="openPopup()"><i> Siamese Cat</i></button>
+
+        <div class="popup" id="popup">
+            <img src="quotation.png">
+            <h2> Thank you</h2>
+            <p> Your details has been successfully submittes. Thanks</p>
+         <button type="button" onclick="closePopup()"> Back </button>
+      </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+<img class="british" src="british.jpg">
+<div class="container2">
+    <button type="British" class="btn2" onclick="openPopup()"><i>British Shorthair</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="main" src="coon.jpg">
+<div class="container3">
+    <button type="Main" class="btn3" onclick="openPopup()"><i> Main Coon</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="persian" src="persian.jpg">
+<div class="container4">
+    <button type="Persian" class="btn4" onclick="openPopup()"><i>Persian Cat</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="ragdoll" src="ragdoll.jpg">
+<div class="container5">
+    <button type="Ragdoll" class="btn5" onclick="openPopup()"><i>Ragdoll</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup(){
+        popup5.classList.remove("open-popup5");
+    }
+</script>
+
+<img class="sphynx" src="sphynx.jpg">
+<div class="container6">
+    <button type="Sphynx" class="btn6" onclick="openPopup()"><i> Sphynx Cat</i></button>
+
+    <div class="popup6" id="popup6">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup6 = document.getElementById("popup6");
+    function openPopup(){
+        popup6.classList.add("open-popup6");
+    }
+    function closePopup(){
+        popup6.classList.remove("open-popup6");
+    }
+</script>
+
+<img class="american" src="americann.jpg">
+<div class="container7">
+    <button type="American" class="btn7" onclick="openPopup()"><i> American Shorthair</i></button>
+
+    <div class="popup7" id="popup7">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup7 = document.getElementById("popup7");
+    function openPopup(){
+        popup7.classList.add("open-popup7");
+    }
+    function closePopup(){
+        popup7.classList.remove("open-popup7");
+    }
+</script>
+
+<img class="abyssinian" src="abyssian.jpg">
+<div class="container8">
+    <button type="Abyssinian" class="btn8" onclick="openPopup()"><i>Abyssinian</i></button>
+
+    <div class="popup8" id="popup8">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup8 = document.getElementById("popup8");
+    function openPopup(){
+        popup8.classList.add("open-popup8");
+    }
+    function closePopup(){
+        popup8.classList.remove("open-popup8");
+    }
+</script>
+
+
+<img class="exotic" src="exotic.jpg">
+<div class="container9">
+    <button type="exotic" class="btn9" onclick="openPopup()"><i>Exotic Shorthair</i></button>
+
+    <div class="popup9" id="popup9">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup9 = document.getElementById("popup9");
+    function openPopup(){
+        popup9.classList.add("open-popup9");
+    }
+    function closePopup(){
+        popup9.classList.remove("open-popup9");
+    }
+</script>
+
+<img class="scottish" src="scottish.jpg">
+<div class="container10">
+    <button type="scottish" class="btn10" onclick="openPopup()"><i>Scottish Fold</i></button>
+
+    <div class="popup10" id="popup10">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup10 = document.getElementById("popup10");
+    function openPopup(){
+        popup10.classList.add("open-popup10");
+    }
+    function closePopup(){
+        popup10.classList.remove("open-popup10");
+    }
+</script>
+
+<img class="burmese" src="burmese.jpg">
+<div class="container11">
+    <button type="burmese" class="btn11" onclick="openPopup()"><i>Burmese Cat</i></button>
+
+    <div class="popup11" id="popup11">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup11 = document.getElementById("popup11");
+    function openPopup(){
+        popup11.classList.add("open-popup11");
+    }
+    function closePopup(){
+        popup11.classList.remove("open-popup11");
+    }
+</script>
+
+<img class="birman" src="birman.jpg">
+<div class="container12">
+    <button type="birman" class="btn12" onclick="openPopup()"><i>Birman</i></button>
+
+    <div class="popup12" id="popup12">
+        <img src="quotation.png">
+        <h2> Thank you</h2>
+        <p> Your details has been successfully submittes. Thanks</p>
+     <button type="button" onclick="closePopup()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup12 = document.getElementById("popup12");
+    function openPopup(){
+        popup12.classList.add("open-popup12");
+    }
+    function closePopup(){
+        popup12.classList.remove("open-popup12");
+    }
+</script>
+
+
+</div> <br> <br><br> <br>
+
+    
+<hr size="2" width="90%" color="#73764f" align="center"> 
+
+ <div class="foot2">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+            <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+               <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>

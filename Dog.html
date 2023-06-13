@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="dog.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+<button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+<div class="animate">
+    <pre class="species">                                        Top Ten (10) Most Popular Dogs                                                                                                                        
+    </pre> <br>
+    <pre> <i>                                                                                       (Click the name of animals to know more)</i></pre> 
+
+    <img class="mutt" src="mutt2.jpg">
+    <div class="container">
+        <button type="Polar" class="btn" onclick="openPopup()"><i>Mutt</i></button>
+
+        <div class="popup" id="popup">
+            <img src="quotation.png">
+            <h2 align="center"><b>About the Breed</b> </h2>
+            <pre>       The mutt or mixed-breed dog of uncertain ancestry is number one. It is the irresistible dog found 
+at the shelter, the brave and beloved protagonist of stories and books and movies and TV shows. It can have a smooth coat, 
+a wiry coat, a curly coat or a wavy coat, long hair, or short hair. It can be a big dog or a small one, have pointed, erect 
+ears or droopy ears, a long muzzle or a squashed-in face, a long straight tail, a bobtail, or a tail that curls over 
+its back. 
+                
+        It can be all one color or many colors. Hybrid vigor has probably made it healthier than many purebreds and 
+studies have shown that mutts live over a year longer than purebreds, which is a lot for a dog. No wonder the mutt is 
+the most popular dog and probably always will be.
+                        </pre> 
+
+        <button type="button" onclick="closePopup()"> Back </button>
+    </div>
+  </div>
+
+  <script>
+      let popup = document.getElementById("popup");
+      function openPopup(){
+          popup.classList.add("open-popup");
+      }
+      function closePopup(){
+          popup.classList.remove("open-popup");
+      }
+  </script>
+
+
+<img class="labrador" src="labrador.jpg">
+<div class="container2">
+    <button type="Panda" class="btn2" onclick="openPopup2()"><i>Labrador Retriver</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>      The Labrador Retriever is the second most popular dog on the list. Unlike the golden retriever, 
+which originated in Great Britain, this retriever originated in Canada to help fishermen haul in their nets. 
+Its coat can also come in more colors than the golden’s, including black, yellow, chocolate, and silver. 
+There are two types, the English and the American, with the English dog being more robust. The one trait that 
+separates the Lab from the golden retriever is its tail, which resembles the tail of an otter and has no feathering.
+
+The Lab is also a brilliant family dog, for it is patient, loving, very intelligent, and biddable. It loves to work and 
+play and adores swimming and is just the pet for a family that has a swimming pool. The Lab is a strong dog, with a 
+thick-muscled neck, a wide chest, barrel ribcage, and long shoulders. It stands from 21.5 to 22.5 inches at the shoulder 
+and weighs between 55 and 75 pounds, though some big males can weigh over 100 pounds. Diet is one thing the Lab parent 
+needs to take into account, for the dog is subject to obesity. It lives between 10 and 12 years.</pre>
+
+        <button type="button" onclick="closePopup2()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="golden" src="golden.jpg">
+<div class="container3">
+    <button type="Sun" class="btn3" onclick="openPopup3()"><i>Golden Retriever</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>      Another perennial favorite is the golden retriever. Bred to be a hunting dog, this dog is known 
+for its alert and loving nature. It is just about the perfect dog for a household with young children as it is 
+gentle and forbearing. Though some golden retriever parents dispute this, it also makes a good watchdog, as it will 
+at least bark if it sees a stranger. The dog will not see them off, as it loves everybody. As a fairly large dog, 
+it is ideal if it comes to a home with plenty of outdoor space but can do well in an apartment if it’s walked 
+and exercised.
+
+        The golden retriever comes in a shorthaired or longhaired form, and since its job was to retrieve waterfowl, 
+its coat is dense and water-repellent. The golden retriever lives between 10 and 12 years, stands 20 to 24 inches high, 
+and weighs between 60 and 80 pounds.</pre>
+
+     <button type="button" onclick="closePopup3()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup3(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup3(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="german" src="germann.jpg">
+<div class="container4">
+    <button type="Bear" class="btn4" onclick="openPopup4()"><i>German Shepherd</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>    The fourth most popular dog on the list is a long-time favorite, the German shepherd. Utterly 
+courageous, confident, extremely loyal, and eager to please and to learn, the German shepherd lives for its family, 
+whether it’s a family of four in the suburbs, a military unit, or a squad of rescue workers. As a big dog, it needs 
+plenty of room and plenty of exercise, including a walk at least once a day. It especially loves to learn new tricks, 
+even if it’s a relatively old dog.
+
+        The German shepherd stands between 23 and 25 inches at the shoulders and weighs between 75 and 95 pounds, 
+much of its muscle. It is known for its long, down-sloping body, erect, triangular ears, and long muzzle with a black 
+nose. The top coat is hard and covers a dense undercoat, which sheds constantly and heavily at certain times of the year. 
+This means the dog needs daily brushing. German shepherds live for around 13 years.</pre>
+
+     <button type="button" onclick="closePopup4()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup4(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup4(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="doodle" src="doodle.jpg">
+<div class="container5">
+    <button type="Grizlly" class="btn5" onclick="openPopup5()"><i>Goldendoodle</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>   The Goldendoodle is one of those crossbreed dogs that are becoming more and more popular. In this case, 
+the cross is between a golden retriever and a poodle. They are not always the result of a purebred golden retriever and 
+a purebred poodle but can be the result of a Goldendoodle and a poodle or two Goldendoodles. Breeders claim the golden 
+retriever/purebred poodle mix is healthier, though the puppies in the same litter can have very different characteristics.
+
+        People choose Goldendoodles because they blend the affectionate nature of the golden retriever with the poodle’s 
+intelligence as well as its hypoallergenic fur. Since there’s not really a breed standard, the appearance of a golden 
+doodle can vary though they tend to have strong limbs, a deep chest, and a long-haired coat that can be curly, straight, 
+or wavy. They have a broad head, a long, strong body, and a feathered tail. Though they do shed, Goldendoodles are known 
+to not shed as much as other dogs, especially if they have a lot of poodle in them. Depending on the type of coat they have,
+these dogs may be prone to severe matting and require regular professional grooming to stay healthy.
+All three coat types require frequent grooming.
+
+        They also come in large, medium, and miniature sizes, with the large dog standing 20 to 24 inches at the shoulder, 
+the medium standing 17 to 20 inches, and the miniature standing no more than 20 inches.
+
+</pre>
+
+     <button type="button" onclick="closePopup5()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup5(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup5(){
+        popup5.classList.remove("open-popup5");
+    }
+</script>
+
+<img class="chihuahua" src="chihuahua.jpg">
+<div class="container6">
+    <button type="Ailuropodinae" class="btn6" onclick="openPopup6()"><i>Chihuahua </i></button>
+
+    <div class="popup6" id="popup6">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>    Could the chihuahua be a good watchdog? It could, if only it were bigger, for it is fearless and loyal.
+Many people have discovered to their dismay that this little companion dog can take over if it’s not given a firm but loving 
+hand. This is one reason why the chihuahua isn’t the best dog to have around children because children will pamper it, 
+and it can become snappy if it’s convinced that it outranks them in the pack. But the chihuahua is just the pet for an 
+apartment, though like other small dogs it needs to be kept warm, and like all dogs, it needs to have its daily walk.
+
+    Another benefit of the chihuahua is its long life. It can live 15 years or longer, even in the midst of health problems 
+that would have defeated larger dogs. Chihuahuas can come in long or shorthaired, apple head or deer head forms. 
+Shorthaired chihuahuas only need to be brushed now and then, but dogs with long coats need to be brushed daily. Both need 
+to be carefully bathed every month or so. The chihuahua is only 6 to 9 inches high at the shoulder and weighs only 2 to 6 
+pounds.</pre>
+
+    
+     <button type="button" onclick="closePopup6()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup6 = document.getElementById("popup6");
+    function openPopup6(){
+        popup6.classList.add("open-popup6");
+    }
+    function closePopup6(){
+        popup6.classList.remove("open-popup6");
+    }
+</script>
+
+<img class="siberian" src="siberian.jpg">
+<div class="container7">
+    <button type="Spectacled" class="btn7" onclick="openPopup7()"><i>Siberian Husky </i></button>
+
+    <div class="popup7" id="popup7">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>   This dog is known for pulling sleds through forbidding wintry conditions. This is no problem for the 
+Siberian husky, for it is both powerful and comes with a well-insulated coat. Besides the ability to work hard, the dog is 
+playful and sweet-natured. It is a good dog for a family with young children and seems eager to meet new people, which does 
+not recommend it as a watchdog. A dog as energetic as the husky needs plenty of room to run around in and lots of exercise. 
+This makes it a great jogging companion, especially when the weather is on the cooler side.
+
+        The husky’s looks reveal its wolf ancestry. It has the wolf’s longish muzzle and triangular, erect ears, its deep 
+chest, long legs and heavy, bushy tail, and eyes that can be blue or brown or both. It even engages in communal howling. 
+But the husky is much smaller than the wolf, standing at between 20 and 23.5 inches at the shoulder and weighing between 
+35 and 60 pounds.</pre>
+
+     <button type="button" onclick="closePopup7()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup7 = document.getElementById("popup7");
+    function openPopup7(){
+        popup7.classList.add("open-popup7");
+    }
+    function closePopup7(){
+        popup7.classList.remove("open-popup7");
+    }
+</script>
+
+<img class="yorkshire" src="york .jpg">
+<div class="container8">
+    <button type="American" class="btn8" onclick="openPopup8()"><i> Yorkshire Terrier</i></button>
+
+    <div class="popup8" id="popup8">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre> The eighth most popular dog on the list is this tiny firecracker from Great Britain. Bred to hunt rats, 
+the Yorkie makes up for its size with its confidence and intelligence. Because it’s so tiny, it’s probably not the best 
+bet for very young and energetic children. On the other hand, it is perfect for a small apartment as long as it is walked 
+every day. Like many diminutive dogs, it’s not as tolerant of cold as larger dogs despite its abundant coat. That coat, 
+by the way, is remarkable for its straight and silky fur, which is tan on the head and muzzle and a lovely steel blue 
+everywhere else.
+
+            If allowed to, the Yorkie’s coat can grow until it touches the ground. If the owner lets this happen, the dog 
+will need a great deal of grooming. Even a coat that’s clipped to make it manageable needs to be combed and brushed, and 
+the fur on the face is so long it can be gathered up in a top knot and held with a bow. The dog is only 9 inches high at 
+the shoulder and weighs less than 7 pounds.</pre>
+
+     <button type="button" onclick="closePopup8()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup8 = document.getElementById("popup8");
+    function openPopup8(){
+        popup8.classList.add("open-popup8");
+    }
+    function closePopup8(){
+        popup8.classList.remove("open-popup8");
+    }
+</script>
+
+<img class="american" src="pitbull.jpg">
+<div class="container9">
+    <button type="American" class="btn9" onclick="openPopup9()"><i> American Pitbull</i></button>
+
+    <div class="popup9" id="popup9">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre> Don’t fear the pitbull! Despite its reputation, a well-trained American pit bull terrier is an intelligent, 
+devoted, and fearless protector of its family. Since it was originally bred, unfortunately, for pit fighting, it is a 
+supremely powerful animal with a broad chest, well-muscled neck, thick skull, and a famously powerful bite. It is a hardy 
+breed and not subject to the sorts of maladies that afflict less robust dogs.
+
+            While these dogs have a sweet temper and can make great pets, they are very powerful carnivores. All dogs can 
+become aggressive in certain circumstances. The sheer power, athleticism and strength of these dogs is what makes them 
+dangerous if they do become aggressive. Like all dogs, pitbulls require exercise and appropriate training.
+            
+            The American pit bull stands between 14 and 24 inches tall at the shoulder and weighs between 22 and 78 pounds. 
+Its coat is shorthaired, sheds moderately, and is a cinch to groom with regular brushing followed by rubbing with a 
+chamois cloth.</pre>
+
+     <button type="button" onclick="closePopup9()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup9 = document.getElementById("popup9");
+    function openPopup9(){
+        popup9.classList.add("open-popup9");
+    }
+    function closePopup9(){
+        popup9.classList.remove("open-popup9");
+    }
+</script>
+
+<img class="australian" src="australian.jpg">
+<div class="container10">
+    <button type="American" class="btn10" onclick="openPopup10()"><i> Australian Shepherd </i></button>
+
+    <div class="popup10" id="popup10">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>This lively, enthusiastic dog was actually developed in the United States and has ancestry in the dogs 
+brought to the US with sheep from Australia. It was bred to herd sheep and cattle, and because of that, it loves the rough 
+and tumble and is great with even rambunctious children. Their shepherd nature also makes these dogs loyal, devoted and 
+obedient, which is why it’s often used as a search and rescue dog. Clearly, the Australian shepherd needs a lot of exercise 
+and a job to do otherwise it becomes bored and fractious.
+
+            The Australian shepherd stands about 18 to 23 inches tall at the shoulder and weighs between 35 and 70 pounds. 
+It has beautiful, thick, somewhat coarse fur with a ruff around its chest and neck. Using a brush with stiff bristles is 
+recommended regularly. The Australian shepherd lives about 12 to 15 years. </pre>
+
+
+     <button type="button" onclick="closePopup10()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup10 = document.getElementById("popup10");
+    function openPopup10(){
+        popup10.classList.add("open-popup10");
+    }
+    function closePopup10(){
+        popup10.classList.remove("open-popup10");
+    }
+</script>
+
+</div>
+<br> <br><br>
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot5">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+          <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+             <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+
+</body>
+</html>

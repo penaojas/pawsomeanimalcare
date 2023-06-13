@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="bear.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png" id="blur"> 
+    <div class="first" > 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+      <button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+<div class="animate" >
+
+    <pre class="species">                               The Eight (8) Bear Species of the World                                                                                                                          
+    </pre> <br>
+    <pre> <i>                                                                                   (Click the name of animals to know more)</i></pre> 
+
+    <img class="polar" src="polar.jpg">
+    <div class="container">
+        <button type="Polar" class="btn" onclick="openPopup()"><i>Polar Bear</i></button>
+
+        <div class="popup" id="popup">
+            <img src="quotation.png">
+            <h2 align="center"><b>About the Species</b> </h2>
+            <pre>        Polar bears are among the largest bears in the world. Adult males may reach 800 kilograms (kg) 
+or 1760 pounds (lbs). In Ontario, the largest male bear recorded from “live capture” research studies 
+weighed 654 kg (1439 lbs). The average weight of male polar bears in Ontario is about 500 kg (1100 lbs). 
+Adult female bears are smaller and average around 300 kg (660 lbs); their peak weights do not usually 
+exceed 400 kg (880 lbs). </pre> 
+
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Ursus Maritimus </pre>
+           
+
+        <button type="button" onclick="closePopup()"> Back </button>
+    </div>
+  </div>
+
+  <script>
+      let popup = document.getElementById("popup");
+      function openPopup(){
+          popup.classList.add("open-popup");
+      }
+      function closePopup(){
+          popup.classList.remove("open-popup");
+      }
+  </script>
+
+
+<img class="asiatic" src="asiatic2.jpg">
+<div class="container2">
+    <button type="Panda" class="btn2" onclick="openPopup2()"><i>Asiatic Black</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre>        Asiatic black bears have long black fur with a distinct white patch on the chest that is often crescent-shaped.
+The fur around the shoulders and throat is particularly long, and their ears are relatively large. Asiatic black bears live 
+in eastern Asia, including Afghanistan, Bangladesh, Bhutan, Cambodia, China, India, Islamic Republic of Iran, Japan, 
+Democratic People’s Republic of Korea, Lao People’s Democratic Republic, Malaysia, Mongolia, Myanmar, Nepal, Pakistan, 
+Russian Federation, Taiwan and Vietnam.  
+
+        Asiatic black bears are more carnivorous than their American counterparts, although only a small part of their 
+diet is made up of meat. This includes small mammals, birds, fish, molluscs and carcasses. They also feed on grasses, 
+fruits, berries, seeds, insects and honey. In autumn they fatten up for the winter by feeding on nuts. In northern 
+climates they hibernate. In southern climates they do not hibernate.</pre>
+    
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Ursus thibetanus </pre>
+
+        <h2 align="center"><b>Other term</b></h2>
+        <pre> Himalayan black bear, Moon bear </pre>
+
+        <button type="button" onclick="closePopup2()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="andean" src="andea.jpg">
+<div class="container3">
+    <button type="Sun" class="btn3" onclick="openPopup3()"><i>Andean Bear</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre>        Most scientists refer to spectacled bears as Andean bears (they are found only in the Andes mountains in 
+South America). The bears are an endangered species, listed as Vulnerable, and it is illegal to kill them. The Andean bear 
+is the last remaining short-faced bear (subfamily Tremarctinae) and the closest living relative to the Florida spectacled 
+bear and short-faced bears of the Middle Pleistocene to Late Pleistocene age. Spectacled bears are the only surviving 
+species of bear native to South America, and the only surviving member of the subfamily Tremarctinae. The Spectacled Bear 
+is technically the largest land carnivore on that continent, although as little as 5% of its diet is composed of meat. South 
+America’s largest obligate carnivore is the jaguar. Among South America’s extant, native land animals, only the Baird’s and 
+South American Tapirs are heavier than this species. The Spectacled bear is a mid-sized species of bear. Overall its fur is
+blackish in color, though bears may vary from jet black to dark brown and to even a reddish hue. 
+
+            The species typically has distinctive beige-coloured marking across its face and upper chest, though not all 
+Spectacled bears have “spectacle” markings. The pattern and extent of pale markings are slightly different on each 
+individual bear and bears can be readily distinguished by this. Males are a third larger than females in dimensions 
+and sometimes twice their weight. Compared to other living bears, this species has a more rounded face with a relatively 
+short and broad snout. In some extinct species of the Tremarctinae subfamily, this facial structure has been thought to be
+an adaptation to a largely carnivorous diet, despite the modern Spectacled bears’ herbivorous dietary preferences.  </pre> 
+
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Tremarctos ornatus </pre>
+
+        <h2 align="center"><b>Other term</b></h2>
+        <pre> Spectacled Bear  </pre> 
+
+        <h2 align="center"><b>Length and Height</b></h2>
+       <pre>Length can range from 120 to 200 cm (47–79 in), with a tail length of a mere 7 cm (2.8 in), 
+        and shoulder height from 60 to 90 cm (24–30 in)</pre> 
+
+     <button type="button" onclick="closePopup3()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup3(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup3(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="panda" src="panda.jpg">
+<div class="container4">
+    <button type="Bear" class="btn4" onclick="openPopup4()"><i>Panda Bear</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+            <pre>        The giant panda is a rare, endangered and elusive bear. Science used to believe that the giant 
+panda was a member of the raccoon family. With DNA analyses science proved itself wrong. The giant panda and the red panda
+are not related. Giant pandas are famous for their love of bamboo, a diet so nutritionally poor that the pandas have to 
+consume up to 20kg each day. The extra digit on the panda’s hand helps them to tear the bamboo and their gut is covered with 
+a thick layer of mucus to protect against splinters.
+                
+                Habitat loss is the greatest cause of the giant panda’s decline, and today their range is restricted to six 
+eparate mountain ranges in western China. A giant panda is born pink, hairless, blind and 1/900th the size of its mother. 
+Unlike other bears, giant pandas do not hibernate. In the winter, they move to lower elevations to keep warm, while
+traveling to higher elevations in the summer to stay cool. They can be active at any time of the day or night. </pre> 
+
+        <h2 align="center"><b>Scientific Name</b></h2>
+        <pre> Ailuropoda melanoleuca </pre>
+
+        <h2 align="center"><b>Length and Weight</b></h2>
+        <pre> Length: 5 ft (1.5m) (with a 6 inch(.2m)tail). Weight: Around 250 lbs (113 kg) (males); around 220 lbs (100 kg) (females). </pre>
+
+     <button type="button" onclick="closePopup4()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup4(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup4(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="sloth" src="sloth.jpg">
+<div class="container5">
+    <button type="Grizlly" class="btn5" onclick="openPopup5()"><i>Sloth Bear</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre>        These shaggy-haired bears can be heard sucking up termites a long distance away. Sloth bears are 
+stocky with long, shaggy, black hair and a white U- or Y-shaped marking on the chest. They have large lips, a long tongue, 
+a pale muzzle and well-developed hook-like claws that enable them to climb trees and dig for termites. Sloth bears live in
+Sri Lanka, India, Bhutan, Nepal and Bangladesh. 
+            
+            Sloth bears are nocturnal and occupy home ranges that they seem happy to share with other sloth bears. 
+Male sloth bears have an average range of 13 square km. This is much smaller than most other bears, probably due to the \
+fact that they do not suffer from seasonal fluctuations of food supply (ants and termites are available all year round).
+The constant availability of ants and termites also mean that they do not need to undergo a winter sleep. </pre> 
+
+            <h2 align="center"><b>Scientific Name</b></h2>
+            <pre> Melursus (Ursus) ursinus  </pre>
+
+            <h2 align="center"><b>Other sub-species</b></h2>
+            <pre> Sri Lankan Sloth Bear and Indian Sloth Bear  </pre> 
+    
+            <h2 align="center"><b>Length and Weight</b></h2>
+            <pre> Body length: 140-190cm, Weight: male: 80-140kg, female: 55-95kg </pre>
+
+     <button type="button" onclick="closePopup5()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup5(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup5(){
+        popup5.classList.remove("open-popup5");
+    }
+</script>
+
+<img class="sun" src="sun.jpg">
+<div class="container6">
+    <button type="Ailuropodinae" class="btn6" onclick="openPopup6()"><i>Ailuropodinae </i></button>
+
+    <div class="popup6" id="popup6">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre>        hey are the smallest species of bear. Sun bears have short black/dark brown water-repellent fur, with a
+yellow crescent on their chest. They have strong paws with naked soles and long sickle-shaped claws. They have flexible 
+snouts and very long tongues, which are an adaptation for extracting termites from nests. Relatively(to their size), 
+they have the largest canines of all the bear species. 
+            
+            Canine teeth are specialised for tearing meat, but sun bears are not particularly carnivorous. They may use 
+their sharp canines as weapons or as tools for tearing at trees to get at insects. Sun bears live in south east Asia: 
+Brunei Darussalam, Cambodia, China, India, Indonesia, Lao Peoples Democratic Republic, 
+Malaysia, Myanmar, Thailand and Vietnam.</pre> 
+           
+            <h2 align="center"><b>Scientific Name</b></h2>
+            <pre> Ursus malayanus </pre>
+    
+            <h2 align="center"><b>Length and Weight</b></h2>
+            <pre> Body length: 120-150cm, Weight: female 27-50kg, male 27-65kg </pre>
+    
+     <button type="button" onclick="closePopup6()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup6 = document.getElementById("popup6");
+    function openPopup6(){
+        popup6.classList.add("open-popup6");
+    }
+    function closePopup6(){
+        popup6.classList.remove("open-popup6");
+    }
+</script>
+
+<img class="brown" src="brownbear.jpg">
+<div class="container7">
+    <button type="Spectacled" class="btn7" onclick="openPopup7()"><i>Brown Bear </i></button>
+
+    <div class="popup7" id="popup7">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+            <pre>       The Brown Bear can be found in Alaska, western Canada,and parts of Washington, Montana and Wyoming.
+ Small individual populations are scattered throughout parts of Europe and Asia. Russia has a healthy population of 
+ brown bears currently. Brown bears range in colour from almost black, brown to very light brown or blonde. 
+                
+ Size varies greatly depending on geographic location and general food availability. The largest bears, the 
+ “Big Browns” exist along the coast of Alaska and Russia growing to very large sizes rivaling that of the Polar Bear. 
+ The interior bears of the North American Rocky Mountains (Grizzly Bear) and the mountains of Europe tend to be much 
+ smaller. The really big bears (1500pounds/700kg and bigger) are now very rare.</pre> 
+     
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre>  Ursus Arctos </pre>
+
+     <button type="button" onclick="closePopup7()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup7 = document.getElementById("popup7");
+    function openPopup7(){
+        popup7.classList.add("open-popup7");
+    }
+    function closePopup7(){
+        popup7.classList.remove("open-popup7");
+    }
+</script>
+
+<img class="american" src="american.jpg">
+<div class="container8">
+    <button type="American" class="btn8" onclick="openPopup8()"><i>American Black Bear</i></button>
+
+    <div class="popup8" id="popup8">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Species</b> </h2>
+        <pre>        The North American Black Bear is the most common bear in North America ranging from the 
+State of Florida north, into Canada and north to Alaska. The black and brown colour phase of the black bear 
+is common. The white colour phase is more rare occuring in north western British Columbia, Canada. The black
+bear is omnivorous.
+            
+     Their diet is mostly vegetable matter. Males reach full size at about 8 years of age. Females mate and 
+produce cubs at 5 to 7 years of age, 8 years and older in the boreal forest regions(Ontario). Males weigh up to 
+280kg(600 pounds), occasionally much more. Black bears live up to 25 years in the wild. Older bears have been 
+documented, however the majority of bears never reach old age due to human activity (hunting).</pre> 
+
+
+    <h2 align="center"><b>Scientific Name</b></h2>
+    <pre>  Ursus Americanus </pre>
+
+    <h2 align="center"><b>Colour</b></h2>
+    <pre> Black, Bluish-black, Brown, White (Kermode or Spirit bear).</pre>
+
+     <button type="button" onclick="closePopup8()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup8 = document.getElementById("popup8");
+    function openPopup8(){
+        popup8.classList.add("open-popup8");
+    }
+    function closePopup8(){
+        popup8.classList.remove("open-popup8");
+    }
+</script>
+
+
+
+</div>
+<br> <br><br>
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot5">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+            <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+               <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>

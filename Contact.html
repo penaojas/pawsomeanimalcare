@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
+    <link rel="icon" href="iconnn.png">
+    <title>PAWSOME Pet Care</title>
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div> <hr size="1.5" width="100%" color="black">
+    
+    <div class="topnav" id="myTopnav">
+      <a href="home.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="Contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Pets
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Dog.html">Dog</a>
+          <a href="Rabbit.html">Rabbit</a>
+          <a href="Hamster.html">Hamster</a>
+          <a href="Bear.html">Bear</a>
+          <a href="Lion.html">Lion</a>
+  
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+      >
+        &#9776;
+      </a>
+    </div>
+  
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+<button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+      
+<section class="con">
+    <hr size="1.5" width="100%" color="black">
+
+    <img class="location" src="loc4.png">
+      <img class="loc" src="location logo.png">
+
+     
+      <img class="call" src="call2.png">
+         <img class="calln" src="call.png">
+
+         <img class="tel" src="con.png">
+          <img class="telphone" src="telephone.png">
+
+          <img class="email" src="em.png">
+            <img class="emaill" src="email.png">
+
+            <div class="locc">
+              
+            <br><br><br><br><br><br><br><br><br><br><br>
+          <div class="feed" align="center"> <p> SUGGESTIONS </p></div>
+
+            <div class="contact">
+              <form action="https://formsubmit.co/joycearabella4@gmail.com" method="POST">
+                <label for="fname">First Name</label>
+                <input type="text"  name="fname" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text"  name="lname" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="fname">Email</label>
+                <input type="text"  name="email" id="email" name="email" placeholder="Email Address..">
+
+                <label for="subject">Comment/Suggestion</label>
+                <textarea id="subject" name="msg" required placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </section>
+
+    <br> <br><br>
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+          <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+          <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+             <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>

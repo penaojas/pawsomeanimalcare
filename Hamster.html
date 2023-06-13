@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab1.css"/>
+    <link rel="stylesheet" type="text/css" href="hamster.css"/>
+    <title>PAWSOME Pet Care</title>
+    <link rel="icon" href="iconnn.png">
+
+</head>
+
+<body background="bg.png"> 
+    <div class="first"> 
+        <Large style="font-size: 150%;"> <b> PAW-SOME Animals </Large> </b> <br> 
+     </div>
+    
+    <div class="tag">
+        <tt style="font-size: 70%;"> <i>All about that Paws </i></tt>
+    </div>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Dog.html">Dog</a>
+            <a href="Rabbit.html">Rabbit</a>
+            <a href="Hamster.html">Hamster</a>
+            <a href="Bear.html">Bear</a>
+            <a href="Lion.html">Lion</a>
+    
+          </div>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+        >
+          &#9776;
+        </a>
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+      <button onclick="topFunction()" id="backbutton" title="Go to top">Back to top</button>
+<script>
+    let mybutton = document.getElementById("backbutton");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+        function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+    <hr size="1.5" width="100%" color="black">
+
+<div class="animate">
+
+    <pre class="species">                         The (5) Most Popular Hamster Species as Pets                                                                                                                         
+    </pre><br>
+
+    <pre> <i>                                                                                   (Click the name of animals to know more)</i></pre> 
+
+    <img class="syrian" src="syrian.jpg">
+    <div class="container">
+        <button type="button" class="btn" onclick="openPopup()"><i>Syrian Hamster</i></button>
+
+        <div class="popup" id="popup">
+            <img src="quotation.png">
+            <h2 align="center"><b>About the Breed</b> </h2>
+            <pre>        Syrian hamsters are one of the most common pets in Singapore due to their cuddly and docile nature. 
+These charming furry babies are also known as golden hamsters or teddy bear hamsters. Also known as golden or teddy 
+        bear hamsters, the Syrian hamster (Mesocricetus auratus) is the most popular pet hamster, especially for children.
+    They range from from 5 to 9 inches in length and have a lifespan of two to four years. </pre> 
+
+            <h2 align="center"><b>Personality Traits</b></h2>
+            <pre>    • Easy to tame and handle
+• Friendly and docile
+• Solitary
+
+They’re known to be the friendliest hamster breed for humans. As they’re solitary creatures, Syrians are best housed alone. 
+                They’re known to fight and inflict harm on each other when housed together.</pre>
+
+            <h2 align="center"><b>Care Requirements</b></h2>
+                <pre>   In order to keep your Syrian healthy, an ideal diet should include:
+                    
+• Commercial hamster mixes
+                     • Small pieces of fresh vegetables and fruits, 
+                                    including apples, pears, broccoli, cauliflower and carrots
+                                  • An occasional treat like nuts, grains, seeds or mealworms
+
+     As Syrians are larger in size compared to other hamster breeds, they require a larger hamster wheel 
+        and living space so that they can get their daily dose of exercise! </pre>
+        
+        <button type="button" onclick="closePopup()"> Back </button>
+      </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+<div class="zoom">
+<img class="chinese" src="chinese.jpg">
+<div class="container2">
+    <button type="Chinese" class="btn2" onclick="openPopup2()"><i>Chinese Hamster</i></button>
+
+    <div class="popup2" id="popup2">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>        The Chinese hamster (Cricetus griseus) can get up to five inches long. They can live up to three years.
+   This species is known for being friendly and comfortable with handling if they are consistently tamed and handled from a 
+   young age. Chinese hamsters are small rodents that came from the deserts of China and Mongolia. They’re often mistaken 
+   as mice due to their pointed noise and noticeable tail.</pre> 
+
+        <h2 align="center"><b>Personality Traits</b></h2>
+        <pre>    • Friendly and doesn’t nip
+• Prone to behavioural problems without enough interaction
+• Territorial
+
+Chinese hamsters need frequent attention and handling to keep them calm and satisfied. 
+They may start chewing on anything they can get their teeth on when they’re bored or left alone for extended periods of time. </pre>
+
+        <h2 align="center"><b>Care Requirements</b></h2>
+            <pre>   Similar to other hamsters, Chinese hamsters will benefit from a diet of hamster food, fresh fruits and vegetables,
+ nuts, grains, seeds and insects.
+
+ As these hamsters require constant interaction, you can help by providing toys and space to keep them occupied and promote 
+ their mental health. House them in separate cages if you have more than one until you’re absolutely 
+ sure that they won’t harm each other. Alternatively, you can get littermates who are already used to each 
+    other’s presence. For female Chinese hamsters, it’s best to house them separately as they 
+can get more aggressive as they mature. </pre>
+
+     <button type="button" onclick="closePopup2()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+        popup2.classList.add("open-popup2");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup2");
+    }
+</script>
+
+<img class="winter" src="winter.jpg">
+<div class="container3">
+    <button type="Winter" class="btn3" onclick="openPopup3()"><i>Winter White Hamster</i></button>
+
+    <div class="popup3" id="popup3">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>       The dwarf winter white Russian (Phodopus sungorus) is similar to the Campbell’s dwarf Russian hamster. 
+    They are typically 3.5 to 4 inches long and live about two years. As their name suggests, winter white dwarf hamsters 
+        originated from snowy regions. They also go by the names Siberian hamster and Djungarian hamster.  Interestingly, 
+           their coats turn white in winter to help protect them from predators! They share a similar appearance to 
+          Campbell’s dwarf hamsters, with the exception of having furry feet, smaller ears and a wider dorsal stripe. </pre> 
+
+        <h2 align="center"><b>Personality Traits</b></h2>
+        <pre>         • Sweet and mellow
+• Social 
+           • Playful and active
+
+Winter white hamsters are easily tamed and enjoy the company of a same-sex companion. 
+They’re very energetic hamsters that love to play. </pre>
+
+        <h2 align="center"><b>Care Requirements</b></h2>
+            <pre>   Winter white hamsters have no particular food requirements, but a balanced diet is essential to keep them in 
+ good health and provide energy. Feed them a combination of fruits, vegetables, seeds, nuts, insects and hamster mixes! 
+
+    As winter whites are extremely active and love to climb, having a cage with multiple levels and plenty of interactive
+  toys for hamsters will prevent boredom. Tanks are a more ideal housing for these animals. They’re almost half the size of 
+Syrians and are quite fast, which may allow them to escape through the gaps of traditional hamster cages.</pre>
+     <button type="button" onclick="closePopup3()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup3 = document.getElementById("popup3");
+    function openPopup3(){
+        popup3.classList.add("open-popup3");
+    }
+    function closePopup3(){
+        popup3.classList.remove("open-popup3");
+    }
+</script>
+
+<img class="campbell" src="campbelli-dwerghamster.png">
+<div class="container4">
+    <button type="cambell" class="btn4" onclick="openPopup4()"><i>Campbell's Hamster</i></button>
+
+    <div class="popup4" id="popup4">
+        <img src="quotation.png">
+        <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>     The Campbell’s dwarf Russian hamster (Phodopus campbelli) grows to a maximum of 4 inches and has an average
+  life expectancy of two years. This is another social breed that can be kept in same-sex groups as long as the
+    hamsters are properly introduced. With their round bodies and small size, Campbell’s dwarf hamsters have an adorable 
+    look. It may be common to see pet stores naming them as “yellow pudding”, “blue pudding” or “sapphire” hamsters
+    depending on their coat colour. </pre> 
+
+        <h2 align="center"><b>Personality Traits</b></h2>
+        <pre>    • Affectionate
+• Easily frightened  
+• Stubborn
+
+When startled or grumpy, Campbells may resort to nipping. 
+They tend to remain awake during the times they receive the most attention. </pre>
+
+        <h2 align="center"><b>Care Requirements</b></h2>
+            <pre>   Compared to other hamster breeds, Campbells are prone to diabetes. An ideal diet should consist of high protein content 
+and minimal fruits to reduce sugar levels. For example, you can feed them about ⅙ of a grape each month as a snack. 
+You can also consult your vet before feeding them any fruits. 
+
+         When Campbells don’t feel comfortable, they may attempt to escape the cage. The best way to prevent this is to 
+keep their housing well ventilated, to which a cage may be more ideal than a tank. As they’re rather timid, ensure that
+there’s plenty of hiding places in the cage to make them feel safe when they’re sleeping or hiding. </pre>
+
+     <button type="button" onclick="closePopup4()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup4 = document.getElementById("popup4");
+    function openPopup4(){
+        popup4.classList.add("open-popup4");
+    }
+    function closePopup4(){
+        popup4.classList.remove("open-popup4");
+    }
+</script>
+
+<img class="roborovski" src="roborovski.jpg">
+<div class="container5">
+    <button type="Roborovski" class="btn5" onclick="openPopup5()"><i>Roborovski Hamster</i></button>
+
+    <div class="popup5" id="popup5">
+        <img src="quotation.png">
+       <h2 align="center"><b>About the Breed</b> </h2>
+        <pre>     The smallest of the popular hamster breeds, the Roborovski dwarf hamster (Phodopus roborovski) matures to just 2
+inches long. On average, these hamsters live about three years. Because this breed is so tiny, it is best to use an aquarium 
+with a mesh lid to house these hamsters. Roborovski hamsters are the smallest hamster species and the fastest of the dwarf 
+  breeds. They’re also called Robo dwarf hamsters. These hardy little animals aren’t especially prone to any illnesses.  </pre> 
+
+        <h2 align="center"><b>Personality Traits</b></h2>
+<pre>• Extremely shy 
+  • Social with other hamsters  
+• Possessive over belongings
+
+Roborovskis are social creatures that love interacting with their own kind. However, 
+they don’t enjoy being touched and may try to escape when being handled.  </pre>
+
+        <h2 align="center"><b>Care Requirements</b></h2>
+            <pre>   Feed your Roborovski with a tablespoon of hamster mix and small amounts of fresh food daily as 
+they have very fast metabolisms.
+
+       A tank may be more ideal than a cage because a cage has gaps where these agile creatures could escape through. 
+ As Roborovskis dislike sharing, ensure that each hamster has their own toys, bowls and water bottles to prevent fighting. </pre>
+     <button type="button" onclick="closePopup5()"> Back </button>
+  </div>
+</div>
+
+<script>
+    let popup5 = document.getElementById("popup5");
+    function openPopup5(){
+        popup5.classList.add("open-popup5");
+    }
+    function closePopup5(){
+        popup5.classList.remove("open-popup5");
+    }
+</script> <br> <br>
+
+<pre class="speciess">NOTE: </pre> <br> <br><br>
+
+<pre class="speciesss">
+        All hamsters require bedding at the bottom of their cage to keep them comfortable and as a way to burrow like they do in the wild. 
+        You can use shredded paper and hardwood shavings. Cedar or pine-based bedding should be avoided as the smell can be toxic to them.
+</pre>
+    
+</div>
+    <br> <br><br> <br> <br><br> <br> 
+
+<hr size="2" width="90%" color="#73764f" align="center"> 
+ <div class="foot4">
+        <p class="pawsome"> PAW-SOME </p>
+
+        <p class="add"> ADDRESS </p>
+        <pre class="some">Quezon Province                                                                                                              
+Lucban                                                                                                                                
+Philippines                                                                                                                        
+━━━━━━━━                                                                                                            
+ </pre>
+
+        <p class="ph"> PHONE </p>   
+
+        <pre class="num">09515821229
+(123) 456-789 
+━━━━━━━━</pre>
+
+        <p class="em"> E-mail </p>   
+
+        <pre class="emm">pawsomeanimal@gmail.com
+animalcare@gmail.com
+━━━━━━━━</pre>
+        
+            <p class="cop">&copy; 2023 Paw-Some Animal Care </p> 
+
+        <div class="acc">
+            <a href="https://www.facebook.com/profile.php?id=100092978809722&is_tour_dismissed=true" class="fa fa-facebook"></a> 
+            <a href="https://twitter.com/arabumbum_" class="fa fa-twitter"></a> 
+               <a href="https://www.instagram.com/arabumbum_/" class="fa fa-instagram"></a>
+        </div>
+    </div>  
+                                                
+                
+</body>
+</html>
